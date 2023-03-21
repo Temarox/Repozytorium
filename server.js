@@ -11,7 +11,7 @@ const https = require("https");
 //II
 app.set("view engine", "ejs");
 
-app.use(express.static("publigit push -u origin"));
+app.use(express.static("public"));
 
 
 
