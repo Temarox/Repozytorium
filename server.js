@@ -11,17 +11,22 @@ const https = require("https");
 //II
 app.set("view engine", "ejs");
 
-app.use(express.static("public"));
+app.use(express.static("publigit push -u originc"));
 
 app.listen(3000, function () {
     console.log("sever started on port 3000");
 });
 //---------------------------------
 
-app.get("/", function(req,res){
-    // res.sendFile(__dirname+"/index.html");
-    res.sendFile(`${__dirname}/index.html`);
+
+
+app.listen(process.env.PORT || 3000, function () {
+    console.log("server started on port 3000");
 })
+// app.get("/", function(req,res){
+//     // res.sendFile(__dirname+"/index.html");
+//     res.sendFile(`${__dirname}/index.html`);
+// })
 
 //https://api.openweathermap.org/data/2.5/weather?q=Warsaw&appid=6e2da3e5d9b9d3af615805a867be3808&units=metric
 
